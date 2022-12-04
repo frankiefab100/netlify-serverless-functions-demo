@@ -4,16 +4,16 @@
 
 <p align="center">
 <a href="https://github.com/frankiefab100/netlify-serveless-functions-demo/fork" target="blank">
-<img src="https://img.shields.io/github/forks/frankiefab100/netlify-serveless-functions-demo?style=flat-square" alt="netlify-serveless-functions-demo forks"/>
+<img src="https://img.shields.io/github/labels/frankiefab100/netlify-serveless-functions-demo/forks?style=flat-square" alt="netlify-serveless-functions-demo forks"/>
 </a>
 <a href="https://github.com/frankiefab100/netlify-serveless-functions-demo/stargazers" target="blank">
-<img src="https://img.shields.io/github/stars/frankiefab100/netlify-serveless-functions-demo?style=flat-square" alt="netlify-serveless-functions-demo stars"/>
+<img src="https://img.shields.io/github/labels/frankiefab100/netlify-serveless-functions-demo/stars?style=flat-square" alt="netlify-serveless-functions-demo stars"/>
 </a>
 <a href="https://github.com/frankiefab100/netlify-serveless-functions-demo/issues" target="blank">
-<img src="https://img.shields.io/github/issues/frankiefab100/netlify-serveless-functions-demo?style=flat-square" alt="netlify-serveless-functions-demo issues"/>
+<img src="https://img.shields.io/github/labels/frankiefab100/netlify-serveless-functions-demo/issues?style=flat-square" alt="netlify-serveless-functions-demo issues"/>
 </a>
 <a href="https://github.com/frankiefab100/netlify-serveless-functions-demo/blob/main/LICENSE" target="blank">
-<img src="https://img.shields.io/github/license/frankiefab100/netlify-serveless-functions-demo?style=flat-square" alt="netlify-serveless-functions-demo licence" />
+<img src="https://img.shields.io/github/labels/frankiefab100/netlify-serveless-functions-demo/license?style=flat-square" alt="netlify-serveless-functions-demo licence" />
 </a>
 </p>
 
