@@ -3,13 +3,13 @@
  <p>Companion repository for the tutorial demostrating how to hide secret keys using netlify functions in a Frontend application</p>
 
 <p align="center">
-<a href="https://github.com/frankiefab100/netlify-serveless-functions-demo/fork" target="blank">
+<a href="https://github.com/frankiefab100/netlify-serveless-functions-demo/labels/fork" target="blank">
 <img src="https://img.shields.io/github/labels/frankiefab100/netlify-serveless-functions-demo/forks?style=flat-square" alt="netlify-serveless-functions-demo forks"/>
 </a>
-<a href="https://github.com/frankiefab100/netlify-serveless-functions-demo/stargazers" target="blank">
+<a href="https://github.com/frankiefab100/netlify-serveless-functions-demo/labels/stargazers" target="blank">
 <img src="https://img.shields.io/github/labels/frankiefab100/netlify-serveless-functions-demo/stars?style=flat-square" alt="netlify-serveless-functions-demo stars"/>
 </a>
-<a href="https://github.com/frankiefab100/netlify-serveless-functions-demo/issues" target="blank">
+<a href="https://github.com/frankiefab100/netlify-serveless-functions-demo/labels/issues" target="blank">
 <img src="https://img.shields.io/github/labels/frankiefab100/netlify-serveless-functions-demo/issues?style=flat-square" alt="netlify-serveless-functions-demo issues"/>
 </a>
 <a href="https://github.com/frankiefab100/netlify-serveless-functions-demo/blob/main/LICENSE" target="blank">
