@@ -50,10 +50,6 @@ h1 {
   min-width: 225px;
 }
 
-.search:focus {
-  border: none;
-}
-
 .search-btn {
   background-color: #04ab04;
   color: #f6f6f6;
@@ -65,4 +61,14 @@ h1 {
 
 .search-btn:hover {
   background-color: #2dc22d;
+}
+
+.photo-wrapper {
+  display: flex;
+  gap: 15px;
+  margin: 30px;
+}
+
+.photo-wrapper img {
+  width: 200px;
 }
