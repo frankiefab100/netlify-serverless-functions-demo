@@ -62,7 +62,7 @@ npm install
 4. Click on `Go Live` to run Live Server
 The native/vanilla javascript application should be running on your browser. 
 
-### How To Setup using dotenv (Not secured)
+### How To Setup using dotenv (Note: This method doesn't work)
 -  Open a terminal and runthe command 
 ```BASH
 npm install dotenv
@@ -78,7 +78,6 @@ yarn add -D dotenv
 - Replace the API keys using Environment variable as:
 `process.env.PIXABAY_API_KEY`
  
-
 
 ## License 📜
 This project is protected under the [MIT License](./License).
