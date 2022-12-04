@@ -15,8 +15,10 @@ window.addEventListener("keydown", (e) => {
   }
 });
 
+const dotenv = require("dotenv").config();
+
 function getPhoto(keyword) {
-  const apiKey = "10694009-840350dba3c047ed6f6b4f364";
+  const apiKey = process.env.PIXABAY_API_KEY;
   let apiURL = `https://pixabay.com/api/?key=${apiKey}&q=${keyword}&image_type=photo&safesearch=true&per_page=3`;
 
   fetch(apiURL, {
