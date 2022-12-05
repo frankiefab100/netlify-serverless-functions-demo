@@ -84,6 +84,13 @@ You can view the project on localhost via: `https://localhost:888/.netlify/funct
 
 - Remove `const apiKey = process.env.PIXABAY_API_KEY` and substitute the apiURL in the `script.js` file with `/.netlify/functions/getPhotos?keyword=${keyword}`
 
+In the Netlify Dashhboard, go to the site tab > Environment varaibles and then configure KEY/VALUE pairs as follows
+
+- PIXABAY_API_ENDPOINT=<https://pixabay.com/api/?key>
+- PIXABAY_API_KEY=your-api-key
+
+> The KEY name should match the one stated in the script.js
+
 - The fetch request URL will  like:  `https://netlify-func-demo.netlify.app/.netlify/functions/getPhotos?keyword=${any-word-here}`
 
 - Create `.env` file and save the API key in it.
@@ -92,6 +99,7 @@ You can view the project on localhost via: `https://localhost:888/.netlify/funct
 NOTE: the `fetch` method is intended for browser runtime. Therefore, we will install `axios` as `npm install axios / yarn add axios`.
 Import as `const axios = require("axios");` in vanilla javascript. For javascript library e.g React, import as `import axios from "axios"`
 
+- Install dotenv as `npm install dotenv / yarn add dotenv`.
 - Replace the API keys using Environment variable as:
 `process.env.PIXABAY_API_KEY`
 

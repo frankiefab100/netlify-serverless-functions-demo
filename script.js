@@ -15,9 +15,6 @@ window.addEventListener("keydown", (e) => {
 });
 
 function getPhoto(keyword) {
-  // const apiKey = process.env.PIXABAY_API_KEY;
-  // let apiURL = `https://pixabay.com/api/?key=${apiKey}&q=${keyword}&image_type=photo&safesearch=true&per_page=3`;
-
   let apiURL = `/.netlify/functions/getPhotos?keyword=${keyword}`;
 
   fetch(apiURL, {
