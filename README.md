@@ -62,22 +62,38 @@ npm install
 4. Click on `Go Live` to run Live Server
 The native/vanilla javascript application should be running on your browser. 
 
-### How To Setup using dotenv (Note: This method doesn't work)
--  Open a terminal and runthe command 
+### How To Setup using Netlify functions (Secured Method)
+-  Open a terminal and install Netlify CLI.
 ```BASH
-npm install dotenv
+npm install -g netlify-cli  or netlify-lamdba
 #OR
-yarn add -D dotenv
+yarn add -D netlify-cli --save-dev or  netlify-lamdba
 ```
+- In the root of the project, create `functions` folder. In this directory, create `getPhotos.js` file.
+- Create `netlify.toml` config file.
+The `command =npm run build` starts the app once it builds and deploy it.
+`functions = "functions"` indicates the getPhotos functions can be found in the `functions` directory.
+This can be manually configured from the Netlify Dashhboard, Navigate to `Site settings` > `Functions` and then enter/paste a path to the directory in your repository where the functions are stored. The default directory is YOUR_BASE_DIRECTORY/netlify/functions.
+
+- In `package.json`, add a script: `"dev": "netlify-dev"`. This is used to load the dev server. Then, run the command `netlify dev` to start app on the server.
+
+OR configure a `start` and `build` scripts as `"netlify-lambda serve functions"`and `"netlify-lambda build functions"` respectively.
+You can view the project on localhost via: `https://localhost:888/.netlify/functions/getPhotos`
+
+- Deployed site is: `https://netlify-func-demo.netlify.app/.netlify/functions/getPhotos`
+
+- Remove `const apiKey = process.env.PIXABAY_API_KEY` and substitute the apiURL in the `script.js` file with `/.netlify/functions/getPhotos?keyword=${keyword}`
+
+- The fetch request URL will  like:  `https://netlify-func-demo.netlify.app/.netlify/functions/getPhotos?keyword=${any-word-here}`
+
 - Create `.env` file and save the API key in it.
-- Create `.gitignore` file, add `.node_modules` and `.env` to exlude them from getting pushed to GitHUb.
-- Import dotenv configuration as:
- ```JS
- const dotenv = require("dotenv").config()
- ```
+- Create `.gitignore` file, add `.node_modules`,`.env`  and `.netlify` to exlude them from getting pushed to GitHub.
+
+NOTE: the `fetch` method is intended for browser runtime. Therefore, we will install `axios` as `npm install axios / yarn add axios`.
+Import as `const axios = require("axios");` in vanilla javascript. For javascript library e.g React, import as `import axios from "axios"`
+
 - Replace the API keys using Environment variable as:
 `process.env.PIXABAY_API_KEY`
- 
 
 ## License 📜
 This project is protected under the [MIT License](./License).

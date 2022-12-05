@@ -1,0 +1,9 @@
+[build]
+  command = 'npm run build'
+  functions = 'functions'
+  publish = "dist"
+  
+[dev]
+  command = "npm start"
+  functions = "functions" 
+  publish = "dist"

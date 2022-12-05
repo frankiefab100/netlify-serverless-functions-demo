@@ -1,5 +1,17 @@
 {
+  "name": "netlify-serveless-functions-demo",
+  "version": "1.0.0",
+  "author": "Franklin Ohaegbulam",
+  "license": "MIT",
+  "scripts": {
+    "dev": "netlify-lambda serve functions",
+    "build": "netlify-lambda build functions"
+  },
   "dependencies": {
-    "dotenv": "^16.0.3"
+    "axios": "^1.2.0",
+    "netlify-lambda": "^2.0.15"
+  },
+  "devDependencies": {
+    "netlify-cli": "^12.2.8"
   }
 }
