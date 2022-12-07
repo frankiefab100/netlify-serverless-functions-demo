@@ -1,12 +1,14 @@
+require("dotenv").config();
 const axios = require("axios");
 
 exports.handler = async (event, context) => {
   try {
     const { keyword } = event.queryStringParameters;
     let response = await axios.get(
-      `${process.env.PIXABAY_API_ENDPOINT}=${process.env.PIXABAY_API_KEY}&q=${keyword}&image_type=photo&safesearch=true&per_page=3`
+      `https://pixabay.com/api/?key=${process.env.PIXABAY_API_KEY}&q=${keyword}&image_type=photo&safesearch=true&per_page=3`
     );
-    let result = response.data;
+
+    let result = await response.json();
     return {
       statusCode: 200,
       body: JSON.stringify({

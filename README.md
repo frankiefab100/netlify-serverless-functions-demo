@@ -59,9 +59,6 @@ cd netlify-serveless-functions-demo
 npm install
 ```
 
-4. Click on `Go Live` to run Live Server
-The native/vanilla javascript application should be running on your browser. 
-
 ### How To Setup using Netlify functions (Secured Method)
 -  Open a terminal and install Netlify CLI.
 ```BASH
@@ -78,7 +75,7 @@ This can be manually configured from the Netlify Dashhboard, Navigate to `Site s
 - In `package.json`, add a script: `"dev": "netlify-dev"`. This is used to load the dev server. Then, run the command `netlify dev` to start app on the server.
 
 OR configure a `start` and `build` scripts as `"netlify-lambda serve functions"`and `"netlify-lambda build functions"` respectively.
-You can view the project on localhost via: `https://localhost:888/.netlify/functions/getPhotos`
+The project will be ready on localhost:8888 via: `https://localhost:8888/.netlify/functions/getPhotos`
 
 - Deployed site is: `https://netlify-func-demo.netlify.app/.netlify/functions/getPhotos`
 
@@ -86,7 +83,6 @@ You can view the project on localhost via: `https://localhost:888/.netlify/funct
 
 In the Netlify Dashhboard, go to the site tab > Environment varaibles and then configure KEY/VALUE pairs as follows
 
-- PIXABAY_API_ENDPOINT=<https://pixabay.com/api/?key>
 - PIXABAY_API_KEY=your-api-key
 
 > The KEY name should match the one stated in the script.js
@@ -111,7 +107,10 @@ This project is protected under the [MIT License](./License).
 
 ## Relevant Links
 
-- [Netlify Docs](https://docs.netlify.com/functions/overview/)
+- [Netlify Functions](https://docs.netlify.com/functions/overview/)
+- [Netlify Lambda](https://github.com/netlify/netlify-lambda#usage)
+- [Netlify Inro to Serveless Functions](https://)
+- [Netlify Edge Functions](https://docs.netlify.com/edge-functions/get-started/)
 
 
 <hr>
