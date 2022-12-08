@@ -14,25 +14,44 @@ window.addEventListener("keydown", (e) => {
   }
 });
 
-function getPhoto(keyword) {
+async function getPhoto(keyword) {
   let apiURL = `/.netlify/functions/getPhotos?keyword=${keyword}`;
 
-  fetch(apiURL, {
-    method: "GET",
-    headers: { accept: "application/json" },
-  }).then((response) => response.json());
-  photoWrapper.innerHTML = JSON.stringify(response);
+  try {
+    const response = await fetch(apiURL);
+    const data = await response.json();
 
-  // .then((data) => {
-  //   let imageURL = data.hits;
-  //   // let imageURL = JSON.stringify(data.hits);
-  //   // imageURL?.map((result) => {
-
-  //   imageURL.forEach((result) => {
-  //     let imageElement = document.createElement("img");
-  //     imageElement.setAttribute("src", `${result.webformatURL}`);
-  //     photoWrapper.appendChild(imageElement);
-  //   });
-  // })
-  // .catch((error) => alert(error.message));
+    // let imageURL = data.imageURL;
+    let imageURL = data.hits;
+    imageURL.forEach((result) => {
+      let imageElement = document.createElement("img");
+      imageElement.setAttribute("src", `${result.webformatURL}`);
+      photoWrapper.appendChild(imageElement);
+    });
+  } catch (error) {
+    alert(error.message);
+  }
 }
+
+// function getPhoto(keyword) {
+//   let apiURL = `/.netlify/functions/getPhotos?keyword=${keyword}`;
+
+//   fetch(apiURL, {
+//     method: "GET",
+//     headers: { accept: "application/json" },
+//   }).then((response) => response.json())
+//   // photoWrapper.innerHTML = JSON.stringify(response);
+
+//   .then((data) => {
+//     let imageURL = data.hits;
+//     // let imageURL = JSON.stringify(data.hits);
+//     // imageURL?.map((result) => {
+
+//     imageURL.forEach((result) => {
+//       let imageElement = document.createElement("img");
+//       imageElement.setAttribute("src", `${result.webformatURL}`);
+//       photoWrapper.appendChild(imageElement);
+//     });
+//   })
+//   .catch((error) => alert(error.message));
+// }

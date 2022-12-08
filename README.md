@@ -109,7 +109,7 @@ This project is protected under the [MIT License](./License).
 
 - [Netlify Functions](https://docs.netlify.com/functions/overview/)
 - [Netlify Lambda](https://github.com/netlify/netlify-lambda#usage)
-- [Netlify Inro to Serveless Functions](https://)
+- [Netlify Intro to Serveless Functions](https://)
 - [Netlify Edge Functions](https://docs.netlify.com/edge-functions/get-started/)
 
 
