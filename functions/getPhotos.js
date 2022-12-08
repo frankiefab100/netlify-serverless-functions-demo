@@ -5,16 +5,15 @@ exports.handler = async (event, context) => {
   try {
     const { keyword } = event.queryStringParameters;
     let response = await axios.get(
-      `https://pixabay.com/api/?key=${process.env.PIXABAY_API_KEY}&q=${keyword}&image_type=photo&safesearch=true&per_page=3`
+      `https://pixabay.com/api/?key=${process.env.PIXABAY_API_KEY}&q=car&image_type=photo&safesearch=true&per_page=3`
     );
 
-    // let result = await response.json();
+    // console.log(JSON.stringify(response.data));
+    let imageURL = response.data;
+
     return {
       statusCode: 200,
-      body: JSON.stringify({
-        // result,
-        imageURL: response.data.hits,
-      }),
+      body: JSON.stringify({ imageURL }),
     };
   } catch (error) {
     return {

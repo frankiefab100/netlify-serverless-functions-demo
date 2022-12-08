@@ -19,17 +19,30 @@ async function getPhoto(keyword) {
 
   try {
     const response = await fetch(apiURL);
+
+    // if (response.ok) {
+    //   console.log(await response.json());
+    // }
+
     const data = await response.json();
 
-    // let imageURL = data.imageURL;
-    let imageURL = data.hits;
+    // let images = [];
+    // if (!!data?.length) {
+    //   images = data.map((image) => image.toString());
+    // }
+
+    // let img = data.forEach(async (image) => {
+    //   console.log(await image.buffer());
+    //   await image.buffer();
+    // });
+
     imageURL.forEach((result) => {
       let imageElement = document.createElement("img");
       imageElement.setAttribute("src", `${result.webformatURL}`);
       photoWrapper.appendChild(imageElement);
     });
   } catch (error) {
-    alert(error.message);
+    console.log(error);
   }
 }
 
