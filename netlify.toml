@@ -1,4 +1,5 @@
 [build]
+  command = "CI= npm run build"
   functions = "netlify/functions"
   publish = "dist"
 
