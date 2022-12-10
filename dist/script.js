@@ -19,32 +19,39 @@ async function getPhoto(keyword) {
 
   try {
     const response = await fetch(apiURL);
-
-    // if (response.ok) {
-    //   console.log(await response.json());
-    // }
-
     const data = await response.json();
 
-    // let images = [];
-    // if (!!data?.length) {
-    //   images = data.map((image) => image.toString());
-    // }
-
-    // let img = data.forEach(async (image) => {
-    //   console.log(await image.buffer());
-    //   await image.buffer();
+    // const imageURL = data.hits;
+    // imageURL.forEach((result) => {
+    //   let imageElement = document.createElement("img");
+    //   imageElement.setAttribute("src", `${result.webformatURL}`);
+    //   photoWrapper.appendChild(imageElement);
     // });
 
-    imageURL.forEach((result) => {
-      let imageElement = document.createElement("img");
-      imageElement.setAttribute("src", `${result.webformatURL}`);
-      photoWrapper.appendChild(imageElement);
-    });
+    console.log(data);
+    console.log(imageURL);
   } catch (error) {
     console.log(error);
   }
 }
+
+// async function getPhoto(keyword) {
+//   let apiURL = `/.netlify/functions/getPhotos?keyword=${keyword}`;
+
+//   while (apiURL) {
+//     const response = await fetch(apiURL);
+//     const data = await response.json();
+
+//     for (const result of data.hits) {
+//       console.log(result.webformatURL);
+//     }
+
+//     let imageElement = document.createElement("img");
+//     imageElement.setAttribute("src", `${imageURL}`);
+//     photoWrapper.appendChild(imageElement);
+//   }
+// }
+// getPhoto(keyword).catch((error) => console.error(error));
 
 // function getPhoto(keyword) {
 //   let apiURL = `/.netlify/functions/getPhotos?keyword=${keyword}`;

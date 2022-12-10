@@ -5,11 +5,17 @@ exports.handler = async (event, context) => {
   try {
     const { keyword } = event.queryStringParameters;
     let response = await axios.get(
-      `https://pixabay.com/api/?key=${process.env.PIXABAY_API_KEY}&q=car&image_type=photo&safesearch=true&per_page=3`
+      `https://pixabay.com/api/?key=${process.env.PIXABAY_API_KEY}&q=${keyword}&image_type=photo&safesearch=true&per_page=3`,
+      {
+        headers: { Accept: "application/json", "Accept-Encoding": "identity" },
+        params: { trophies: true },
+      }
     );
 
-    // console.log(JSON.stringify(response.data));
     let imageURL = response.data;
+    // let imageURL = response.data.hits.forEach((result) => {
+    //   result.webformatURL;
+    // });
 
     return {
       statusCode: 200,
