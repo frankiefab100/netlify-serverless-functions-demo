@@ -4,6 +4,7 @@
   "author": "Franklin Ohaegbulam",
   "license": "MIT",
   "scripts": {
+    "build": "npm run build",
     "dev": "netlify dev"
   },
   "dependencies": {
