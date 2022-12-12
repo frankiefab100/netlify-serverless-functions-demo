@@ -3,6 +3,7 @@ const axios = require("axios");
 const process = require("process");
 
 exports.handler = async (event, context) => {
+  // export async function handler(event, context) {
   try {
     const { keyword } = event.queryStringParameters;
     let response = await axios.get(
@@ -26,3 +27,5 @@ exports.handler = async (event, context) => {
     };
   }
 };
+
+// module.exports.handler();
