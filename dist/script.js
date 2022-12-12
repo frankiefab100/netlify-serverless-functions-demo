@@ -1,6 +1,3 @@
-require("dotenv").config();
-const process = require("process");
-
 const searchbar = document.querySelector(".search");
 const submitBtn = document.querySelector(".search-btn");
 const photoWrapper = document.querySelector(".photo-wrapper");
