@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "author": "Franklin Ohaegbulam",
   "license": "MIT",
+  "type": "module",
   "scripts": {
-    "build": "netlify-lambda build netlify/functions",
     "dev": "netlify dev"
   },
   "dependencies": {
