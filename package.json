@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "author": "Franklin Ohaegbulam",
   "license": "MIT",
-  "type": "module",
+  "requires": "true",
   "scripts": {
     "dev": "netlify dev"
   },
