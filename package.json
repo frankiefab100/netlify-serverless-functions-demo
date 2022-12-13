@@ -5,6 +5,7 @@
   "license": "MIT",
   "requires": "true",
   "scripts": {
+    "build": "npm run-script",
     "dev": "netlify dev"
   },
   "dependencies": {
