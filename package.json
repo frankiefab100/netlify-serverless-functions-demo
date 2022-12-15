@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "build": "npm run-script",
+  },
   "dependencies": {
     "dotenv": "^16.0.3"
   }
