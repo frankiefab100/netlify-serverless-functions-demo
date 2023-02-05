@@ -33,8 +33,7 @@ Netlify Functions are files used deploy server-side code as API endpoints withou
 To follow along with this tutorial, basic understanding of RESTful APIs and  `async/await` is required.
 
 ## Getting Started
-It is recommended to start off from the `exposed-keys` branch.
-Then, `dotenv-way` branch, [See  branch](https://github.com/frankiefab100/netlify-serveless-functions-demo/tree/dotenv-way).
+This branch is deploy via: https://dev--netlify-func-demo.netlify.app/.
 
 The final demo app lives in the `main` branch: <https://netlify-func-demo.netlify.app/>
 
