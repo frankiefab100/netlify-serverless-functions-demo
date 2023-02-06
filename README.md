@@ -3,7 +3,7 @@
  <p>Companion repository for the tutorial demostrating how to hide secret keys using netlify functions in a Frontend application</p>
 
 <p align="center">
-<a href="https://github.com/frankiefab100/netlify-serverless-functions-demo/tree/main/fork" target="blank">
+<a href="https://github.com/frankiefab100/netlify-serverless-functions-demo/fork" target="blank">
 <img src="https://img.shields.io/github/forks/frankiefab100/netlify-serverless-functions-demo?style=flat-square" alt="netlify-serverless-functions-demo forks"/>
 </a>
 <a href="https://github.com/frankiefab100/netlify-serverless-functions-demo/stargazers" target="blank">
