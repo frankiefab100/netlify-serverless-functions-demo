@@ -12,7 +12,7 @@
 <a href="https://github.com/frankiefab100/netlify-serverless-functions-demo/issues" target="blank">
 <img src="https://img.shields.io/github/issues/frankiefab100/netlify-serverless-functions-demo?style=flat-square" alt="netlify-serverless-functions-demo issues"/>
 </a>
-<a href="https://github.com/frankiefab100/netlify-serverless-functions-demo/blob/main/LICENSE" target="blank">
+<a href="https://github.com/frankiefab100/netlify-serverless-functions-demo/tree/main/LICENSE" target="blank">
 <img src="https://img.shields.io/github/license/frankiefab100/netlify-serverless-functions-demo?style=flat-square" alt="netlify-serverless-functions-demo licence" />
 </a>
 </p>
