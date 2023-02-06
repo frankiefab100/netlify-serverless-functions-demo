@@ -1,19 +1,19 @@
 <div align="center">
- <h1>Netlify Serveless Functions Demo</h1>
+ <h1>Netlify Serverless Functions Demo</h1>
  <p>Companion repository for the tutorial demostrating how to hide secret keys using netlify functions in a Frontend application</p>
 
 <p align="center">
-<a href="https://github.com/frankiefab100/netlify-serveless-functions-demo/fork" target="blank">
-<img src="https://img.shields.io/github/forks/frankiefab100/netlify-serveless-functions-demo?style=flat-square" alt="netlify-serveless-functions-demo forks"/>
+<a href="https://github.com/frankiefab100/netlify-serverless-functions-demo/tree/main/fork" target="blank">
+<img src="https://img.shields.io/github/forks/frankiefab100/netlify-serverless-functions-demo?style=flat-square" alt="netlify-serverless-functions-demo forks"/>
 </a>
-<a href="https://github.com/frankiefab100/netlify-serveless-functions-demo/stargazers" target="blank">
-<img src="https://img.shields.io/github/stars/frankiefab100/netlify-serveless-functions-demo?style=flat-square" alt="netlify-serveless-functions-demo stars"/>
+<a href="https://github.com/frankiefab100/netlify-serverless-functions-demo/stargazers" target="blank">
+<img src="https://img.shields.io/github/stars/frankiefab100/netlify-serverless-functions-demo?style=flat-square" alt="netlify-serverless-functions-demo stars"/>
 </a>
-<a href="https://github.com/frankiefab100/netlify-serveless-functions-demo/issues" target="blank">
-<img src="https://img.shields.io/github/issues/frankiefab100/netlify-serveless-functions-demo?style=flat-square" alt="netlify-serveless-functions-demo issues"/>
+<a href="https://github.com/frankiefab100/netlify-serverless-functions-demo/issues" target="blank">
+<img src="https://img.shields.io/github/issues/frankiefab100/netlify-serverless-functions-demo?style=flat-square" alt="netlify-serverless-functions-demo issues"/>
 </a>
-<a href="https://github.com/frankiefab100/netlify-serveless-functions-demo/blob/main/LICENSE" target="blank">
-<img src="https://img.shields.io/github/license/frankiefab100/netlify-serveless-functions-demo?style=flat-square" alt="netlify-serveless-functions-demo licence" />
+<a href="https://github.com/frankiefab100/netlify-serverless-functions-demo/blob/main/LICENSE" target="blank">
+<img src="https://img.shields.io/github/license/frankiefab100/netlify-serverless-functions-demo?style=flat-square" alt="netlify-serverless-functions-demo licence" />
 </a>
 </p>
 
@@ -33,8 +33,7 @@ Netlify Functions are files used deploy server-side code as API endpoints withou
 To follow along with this tutorial, basic understanding of RESTful APIs and  `async/await` is required.
 
 ## Getting Started
-It is recommended to start off from the `exposed-keys` branch.
-Then, `dotenv-way` branch, [See  branch](https://github.com/frankiefab100/netlify-serveless-functions-demo/tree/dotenv-way).
+It is recommended to start off from the [testing branch](https://github.com/frankiefab100/netlify-serverless-functions-demo/tree/testing).
 
 The final demo app lives in the `main` branch: <https://netlify-func-demo.netlify.app/>
 
@@ -44,13 +43,13 @@ The final demo app lives in the `main` branch: <https://netlify-func-demo.netlif
 1. Clone the repository
 
 ```BASH
-git clone https://github.com/frankiefab100/netlify-serveless-functions-demo.git
+git clone https://github.com/frankiefab100/netlify-serverless-functions-demo.git
 ```
 
-2. Change to netlify-serveless-functions-demo directory
+2. Change to netlify-serverless-functions-demo directory
 
 ```BASH
-cd netlify-serveless-functions-demo
+cd netlify-serverless-functions-demo
 ```
 
 3. Install dependencies
@@ -103,13 +102,13 @@ Import as `const axios = require("axios");` in vanilla javascript. For javascrip
 This project is protected under the [MIT License](./License).
 
 ## Deploy
-[![netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/frankiefab100/netlify-serveless-functions-demo)
+[![netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/frankiefab100/netlify-serverless-functions-demo)
 
 ## Relevant Links
 
 - [Netlify Functions](https://docs.netlify.com/functions/overview/)
 - [Netlify Lambda](https://github.com/netlify/netlify-lambda#usage)
-- [Netlify Intro to Serveless Functions](https://www.netlify.com/blog/intro-to-serverless-functions/)
+- [Netlify Intro to Serverless Functions](https://www.netlify.com/blog/intro-to-serverless-functions/)
 - [Netlify Edge Functions](https://docs.netlify.com/edge-functions/get-started/)
 
 
