@@ -28,9 +28,9 @@ function getPhoto(keyword) {
     .then((data) => {
       let imageURL = data.hits;
 
-      for (let i = 0; i < data.imageURL.length; i++) {
+      for (let i = 0; i < imageURL.length; i++) {
       let imageElement = document.createElement("img");
-      imageElement.setAttribute("src", `${data.imageURL[i].webformatURL}`);
+      imageElement.setAttribute("src", `${imageURL[i].webformatURL}`);
       photoWrapper.appendChild(imageElement);
       }
     })
