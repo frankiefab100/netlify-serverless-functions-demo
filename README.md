@@ -73,6 +73,10 @@ This project is protected under the [MIT License](./License).
 ## Deploy
 [![netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/frankiefab100/netlify-serverless-functions-demo)
 
+## Resources
+Check out the blog post: https://www.freecodecamp.org/news/hide-api-keys-in-frontend-apps-using-netlify-functions/
+
+
 ## Relevant Links
 
 - [Netlify Functions](https://docs.netlify.com/functions/overview/)
